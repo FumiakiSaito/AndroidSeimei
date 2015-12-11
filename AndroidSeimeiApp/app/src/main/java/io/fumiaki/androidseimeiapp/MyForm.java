@@ -1,5 +1,6 @@
 package io.fumiaki.androidseimeiapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -7,6 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MyForm extends AppCompatActivity {
+
+    public final static String EXTRA_MYNAME = "io.fumiaki.androidseimeiapp.MYNAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,9 @@ public class MyForm extends AppCompatActivity {
 
         } else {
             // 次の画面へ
+            Intent intent = new Intent(this, MyResult.class);
+            intent.putExtra(EXTRA_MYNAME, myName);
+            startActivity(intent);
         }
 
     }
