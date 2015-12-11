@@ -27,7 +27,7 @@ public class MyResult extends AppCompatActivity {
         int score = randomGenerator.nextInt(101); //0-100
 
         TextView scoreLabel = (TextView) findViewById(R.id.scoreLabel);
-        scoreLabel.setText(String.valueOf(score) + "の点数は…");
+        scoreLabel.setText(String.valueOf(score) + "点です");
 
     }
 

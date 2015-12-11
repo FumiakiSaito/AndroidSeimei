@@ -20,6 +20,7 @@
         </activity>
         <activity
             android:name=".MyResult"
+            android:parentActivityName="io.fumiaki.androidseimeiapp.MyForm"
             android:label="@string/title_activity_my_result"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
